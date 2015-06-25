@@ -50,3 +50,15 @@ public static Object jsonParseResponse(JSONObject json, Class<?>... responses) {
 		return obj;
 	}
 ```
+``` java
+/**
+	 * 将对象数组转化成对应的ArrayList
+	 * @param a 对象数组
+	 * @return 转化后的ArrayList
+	 */
+	public static <T> List<T> asList(T... a) {
+		List<T> list = new ArrayList<T>();
+		Collections.addAll(list, a);
+		return list;
+	}
+```
